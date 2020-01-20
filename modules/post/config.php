@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'post',
-    '__version' => '0.0.1',
+    '__version' => '0.0.2',
     '__git' => 'git@github.com:getmim/post.git',
     '__license' => 'MIT',
     '__author' => [
@@ -89,6 +89,14 @@ return [
                 ],
                 'words' => [
                     'type' => 'number'
+                ],
+                'content' => [
+                    'type' => 'partial',
+                    'model' => [
+                        'name'  => 'Post\\Model\\PostContent',
+                        'field' => 'id'
+                    ],
+                    'format' => 'post-content'
                 ],
                 'published' => [
                     'type' => 'date'
