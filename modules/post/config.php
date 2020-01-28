@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'post',
-    '__version' => '0.0.3',
+    '__version' => '0.0.4',
     '__git' => 'git@github.com:getmim/post.git',
     '__license' => 'MIT',
     '__author' => [
@@ -67,7 +67,8 @@ return [
                 ],
                 'status' => [
                     'type' => 'enum',
-                    'enum' => 'post.status'
+                    'enum' => 'post.status',
+                    'vtype' => 'int'
                 ],
                 'title' => [
                     'type' => 'text'
