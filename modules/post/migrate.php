@@ -23,8 +23,7 @@ return [
             'publisher' => [
                 'type' => 'INT',
                 'attrs' => [
-                    'unsigned' => TRUE,
-                    'null' => FALSE
+                    'unsigned' => TRUE
                 ],
                 'index' => 3000
             ],
@@ -44,7 +43,7 @@ return [
                 'attrs' => [
                     'null' => FALSE
                 ],
-                'index' => 3000
+                'index' => 5000
             ],
             'slug' => [
                 'type' => 'VARCHAR',
@@ -53,23 +52,23 @@ return [
                     'null' => FALSE,
                     'unique' => TRUE
                 ],
-                'index' => 4000
+                'index' => 6000
             ],
             'cover' => [
                 'type' => 'TEXT',
                 'attrs' => [],
-                'index' => 5000
+                'index' => 7000
             ],
             'embed' => [
                 'type' => 'TEXT',
                 'attrs' => [],
-                'index' => 6000
+                'index' => 8000
             ],
             'reff' => [
                 'comment' => 'ex: ["url",...]',
                 'type' => 'TEXT',
                 'attrs' => [],
-                'index' => 7000
+                'index' => 9000
             ],
             'words' => [
                 'type' => 'INT',
@@ -77,19 +76,33 @@ return [
                     'null' => false,
                     'unsigned' => true 
                 ],
-                'index' => 8000
+                'index' => 10000
+            ],
+            'featured' => [
+                'type' => 'BOOLEAN',
+                'attrs' => [
+                    'default' => FALSE
+                ],
+                'index' => 11000
+            ],
+            'editor_pick' => [
+                'type' => 'BOOLEAN',
+                'attrs' => [
+                    'default' => FALSE
+                ],
+                'index' => 12000
             ],
             'meta' => [
                 'type' => 'TEXT',
                 'attrs' => [],
-                'index' => 9000
+                'index' => 13000
             ],
             'published' => [
                 'type' => 'DATETIME',
                 'attrs' => [
                     'null' => true 
                 ],
-                'index' => 10000
+                'index' => 14000
             ],
             'updated' => [
                 'type' => 'TIMESTAMP',
@@ -97,14 +110,14 @@ return [
                     'default' => 'CURRENT_TIMESTAMP',
                     'update' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 11000
+                'index' => 15000
             ],
             'created' => [
                 'type' => 'TIMESTAMP',
                 'attrs' => [
                     'default' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 12000
+                'index' => 16000
             ]
         ]
     ],

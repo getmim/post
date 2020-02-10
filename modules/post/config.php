@@ -99,6 +99,12 @@ return [
                     ],
                     'format' => 'post-content'
                 ],
+                'featured' => [
+                    'type' => 'boolean'
+                ],
+                'editor_pick' => [
+                    'type' => 'boolean'
+                ],
                 'published' => [
                     'type' => 'date'
                 ],
