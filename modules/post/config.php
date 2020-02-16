@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'post',
-    '__version' => '0.0.4',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/post.git',
     '__license' => 'MIT',
     '__author' => [
@@ -38,7 +38,8 @@ return [
     ],
     'libEnum' => [
         'enums' => [
-            'post.status' => ['Deleted', 'Draft', 'Editor', 'Published']
+            'post.status' => ['Deleted', 'Draft', 'Editor', 'Published'],
+            'content-pricing.type' => ['post' => 'Post']
         ]
     ],
     'libFormatter' => [
@@ -136,6 +137,25 @@ return [
                 ],
                 'created' => [
                     'type' => 'date'
+                ]
+            ]
+        ]
+    ],
+    'contentPricing' => [
+        'active' => [
+            'post' => true
+        ],
+        'objects' => [
+            'post' => [
+                'model' => 'Post\\Model\\Post',
+                'format' => 'post',
+                'fields' => [
+                    'id'        => 'id',
+                    'user'      => 'user',
+                    'title'     => 'title',
+                    'created'   => 'created',
+                    'published' => 'published',
+                    'status'    => 'status'
                 ]
             ]
         ]
