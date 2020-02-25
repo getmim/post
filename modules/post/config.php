@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'post',
-    '__version' => '0.1.1',
+    '__version' => '0.1.2',
     '__git' => 'git@github.com:getmim/post.git',
     '__license' => 'MIT',
     '__author' => [
@@ -78,7 +78,7 @@ return [
                     'type' => 'text'
                 ],
                 'cover' => [
-                    'type' => 'json'
+                    'type' => 'std-cover'
                 ],
                 'embed' => [
                     'type' => 'embed'
